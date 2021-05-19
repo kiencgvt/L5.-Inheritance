@@ -1,0 +1,22 @@
+<?php
+include_once ("Point.php");
+include_once ("MoveablePoint.php");
+$point = new Point(1.5, 1.4);
+echo $point;
+echo $point->getX();
+echo "<br/>";
+echo $point->getY();
+echo "<br/>";
+print_r($point->getXY());
+echo "<br/>";
+$moveAblePoint = new MoveablePoint(2, 3, 5, 5);
+echo $moveAblePoint;
+echo $moveAblePoint->getX();
+echo "<br/>";
+echo $moveAblePoint->getY();
+echo "<br/>";
+print_r($point->getXY());
+echo "<br/>";
+echo $moveAblePoint->getXSpeed();
+echo "<br/>";
+echo $moveAblePoint->getYSpeed();
